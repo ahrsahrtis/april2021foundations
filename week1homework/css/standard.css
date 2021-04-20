@@ -1,0 +1,46 @@
+html {
+    background-color: #3AFEC4;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    background-color: #358BE6;
+    justify-content: space-around;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #358BE6;
+    display: flex;
+    justify-content: space-around;
+}   
+
+a {
+    color: white;
+}
+
+#pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img:hover {
+    opacity: 0;
+}
+
+p {
+    font-family: Arial;
+    color:indigo;
+}
+
