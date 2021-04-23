@@ -62,7 +62,7 @@ Buttons
 }
 
 .btn-alt {
-    border: 1px solid #dfe2e5;
+    border: 1px solid #dfe2ed;
     padding: 10px 30px;
 }
 
@@ -73,7 +73,7 @@ Buttons
 body {
     background: #11073fe3;
     color: rgb(39, 58, 110);
-    font: 300px 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*
