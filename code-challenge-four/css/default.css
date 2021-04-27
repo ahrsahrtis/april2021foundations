@@ -21,16 +21,23 @@ html, body {
 nav {
     display: flex;
     background-color: #808080;
-    justify-content:space-around;
+    justify-content: center;
     position: fixed;
     bottom: 0;
     width: 100%;
     margin: 0;
     padding: 0;
+    left: 0;
 
 }
 
 a {
     text-decoration: underline;
     color: white;
+}
+
+.seperator {
+    padding-left: 50px;
+    padding-right: 50px;
+
 }
