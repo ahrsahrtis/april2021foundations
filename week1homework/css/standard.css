@@ -1,6 +1,7 @@
 html {
     background-color: #3AFEC4;
-    font-size: 20px;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -23,12 +24,6 @@ a {
     color: white;
 }
 
-#pic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
 
 section {
     display: flex;
@@ -40,7 +35,16 @@ img:hover {
 }
 
 p {
-    font-family: Arial;
     color:indigo;
 }
 
+img {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    filter: drop-shadow();
+}

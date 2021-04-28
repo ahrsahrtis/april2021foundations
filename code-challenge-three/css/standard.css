@@ -3,5 +3,11 @@ section {
 }
 
 body {
-    background-image: url("../images/kitten.jpg")
+    background: url("../images/kitten.jpg") no-repeat center center fixed;
+}
+
+img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
