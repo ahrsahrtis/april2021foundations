@@ -61,7 +61,7 @@ article:before {
     z-index: -1;
 }
 
-#services,#apps p {
+#services p,#apps p {
     text-align:left;
 }
 
