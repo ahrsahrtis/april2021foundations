@@ -327,7 +327,7 @@ Home
     border-radius: 5px;
     display: block;
     margin-bottom: 22px;
-
+    max-width: 100%;
 }
 
 /*
