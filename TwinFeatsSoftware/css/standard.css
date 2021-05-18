@@ -23,6 +23,7 @@ nav {
 a {
 	color: #f0f0f0;
 	text-decoration: none;
+    padding: 0.25em;
 }
 
 #home {
@@ -121,4 +122,58 @@ figure {
     margin-top: .3rem;
     margin-right: 1em;
     margin-bottom: 2em;
+}
+
+#contact:before {
+    background-image: url('../images/contactbg.jpg');
+}
+
+
+#contact img {
+    height: 1.5em;
+    vertical-align: middle;
+    padding-bottom: 0.25em;
+    padding-right: 0.25em;
+}
+
+
+
+#contact > div {
+    display: flex;
+    flex-direction: column;
+    width: calc(2em + 12ch);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+#contact a {
+    color: #303030;
+    text-decoration: underline;
+}
+
+nav > a:hover {
+    color: cyan;
+}
+
+nav > a {
+    transition: color .5s;
+}
+
+#home img.logo:hover {
+    transform: rotate(360deg);
+}
+
+#home img.logo {
+    transition: transform 1s;
+}
+
+#contact a img {
+    transition: transform .25s;
+}
+
+
+#contact a:hover img {
+    transform: scale(1.2, 1.2);
 }
