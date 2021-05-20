@@ -1,0 +1,160 @@
+html {
+    font-size: xx-large;
+}
+
+#mobile-nav {
+    /* display the hamburger menu */
+    display: block;
+    /* position it near the top left corner of the screen */
+    position: fixed;
+    top: 0.5em;
+    left: 0.5em;
+    /* give it a reasonable size */
+    height: 5vh;
+    width: 5vh;
+    /* ensure it is on top in the stacking order */
+    z-index: 10;
+    /* turn off <a> tag padding for this tag */
+    padding: 0;
+}
+
+
+#mobile-nav > img {
+    /* Size the image based on the size of the #mobile-nav */
+    width: 100%;
+}
+
+
+/* Show the actual <nav> tag when the #mobile-nav is clicked */
+	#nav:target {
+		width: 12ch;
+		height: 7em;
+		padding: 0.2em;
+	}
+
+#about:target .cube {
+    animation-play-state: running;
+}
+
+
+nav {
+    /* mobile orientation is column */
+    flex-direction: column;
+    /* place the nav just under the hamburger menu */
+    top: calc(5vh + .5em);
+    /* hide the <nav> by not letting it have any width size due to max-width */
+    max-width: 0;
+    /* don't let content extend outside of tag */
+    overflow: hidden;
+    /* transition into view when shown/hidden */
+    transition: all .5s;
+}
+
+
+nav > a {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+
+nav > a:first-child {
+    padding-top: 0.5em;
+}
+
+
+nav > a:last-child {
+    padding-bottom: 0.5em;
+}
+
+article {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vw;
+    font-size: 1.2rem;
+    height: auto;
+    min-height: 100vh;
+    position: absolute;
+}
+
+.vertical-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tagline {
+    white-space: nowrap;
+}
+
+#bonus {
+    display: block;
+    margin-top: 3em;
+}   
+
+.photobox {
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+.photobox img {
+    height: 60vw;
+    left: 50%;
+}
+
+.stage {
+
+    width: 100%;
+}
+
+.stage .cube {
+    width: 60vw;
+    height: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    animation-delay: 3s;
+}
+
+
+.stage .front {
+    transform: translateX(-50%) translateZ(30vw);
+}
+
+
+.stage .back {
+    transform: translateX(-50%) rotateY(180deg) translateZ(30vw);
+}
+
+
+.stage .top {
+    transform: translateX(-50%) rotateX(90deg) translateZ(30vw);
+}
+
+
+.stage .bottom {
+    transform: translateX(-50%) rotateX(-90deg) translateZ(30vw);
+}
+
+
+.stage .left {
+    transform: translateX(-50%) rotateY(-90deg) translateZ(30vw);
+}
+
+
+.stage .right {
+    transform: translateX(-50%) rotateY(90deg) translateZ(30vw);
+}
+
+figcaption {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.bonus-img {
+    margin-top: 5vh;
+
+    display: block;
+
+    width: 100%;
+
+}

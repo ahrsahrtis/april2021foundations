@@ -1,6 +1,6 @@
 html {
     font-family: "Open Sans", sans-serif;
-    font-size: 16pt;
+    font-size: x-large;
 }
 
 
@@ -64,7 +64,8 @@ nav > a:hover {
 
 
 .logo {
-    width: 9ch;
+    width: 40vh;
+    height: auto;
 }
 
 
@@ -86,7 +87,7 @@ nav > a:hover {
 
 
 .photobox img {
-    width: 22ch;
+    height: 20vh;
 }
 
 
@@ -241,11 +242,19 @@ article:before {
 
 #contact > div {
     display: flex;
+
     flex-direction: column;
-    width: calc(2em + 12ch);
-    margin-left: auto;
-    margin-right: auto;
+
+    position: absolute;
+
+    left: 50%;
+
+    top: calc(4vh + 3.5em);
+
+    transform: translateX(-50%);
+
     text-align: left;
+
 }
 
 
@@ -276,8 +285,8 @@ article:before {
 
 
 .stage .cube {
-    width: 22ch;
-    height: 22ch;
+    width: 20vh;
+    height: 20vh;
     transform-style: preserve-3d;
 
 
@@ -368,4 +377,8 @@ article:before {
     100% {
         transform: rotateY(360deg);
     }
+}
+
+#mobile-nav, #mobile-trigger, #bonus, .bonus-img {
+    display: none;
 }
