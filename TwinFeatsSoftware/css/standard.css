@@ -81,7 +81,7 @@ nav > a:hover {
 }
 
 
-.photobox {
+.photobox { /* should have margin-top: 1em; */
     display: flex;
 }
 
@@ -91,13 +91,14 @@ nav > a:hover {
 }
 
 
-.photobox figure {
+.photobox figure { 
     margin-left: 0;
     margin-top: .3rem;
     margin-right: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 1em; 
 }
 
+/* missing selector block for figcaption */
 
 article {
     padding-left: 20vw;
@@ -174,7 +175,7 @@ article:before {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    opacity: 0.2;
+    opacity: 0.2; /* should be 0.1 */
     z-index: -1;
 }
 
@@ -188,6 +189,7 @@ article:before {
     text-align: left;
 }
 
+/* missing selector block for h2 */
 
 #apps h1 {
 	grid-area: header;
