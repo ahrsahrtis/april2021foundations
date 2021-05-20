@@ -26,15 +26,13 @@ html {
 
 
 /* Show the actual <nav> tag when the #mobile-nav is clicked */
-	#nav:target {
-		width: 12ch;
-		height: 7em;
-		padding: 0.2em;
-	}
-
-#about:target .cube {
-    animation-play-state: running;
+#nav:target {
+	width: 12ch;
+	height: 7em;
+	padding: 0.2em;
 }
+
+
 
 
 nav {
@@ -157,4 +155,8 @@ figcaption {
 
     width: 100%;
 
+}
+
+#about:target .cube {
+    animation-play-state: running;
 }
