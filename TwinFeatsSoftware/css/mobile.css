@@ -173,3 +173,9 @@ figcaption {
 #apps > .sidebar {
     display: none;
 }
+
+#contact > div {
+    
+    top: calc(4vh + 3.5em);
+
+}

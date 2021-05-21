@@ -254,7 +254,7 @@ h2 {
 
     left: 50%;
 
-    top: calc(4vh + 3.5em);
+    top: calc(10vh + 3.5rem);
 
     transform: translateX(-50%);
 
