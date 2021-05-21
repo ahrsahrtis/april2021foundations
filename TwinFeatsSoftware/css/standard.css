@@ -190,7 +190,9 @@ article:before {
     text-align: left;
 }
 
-/* missing selector block for h2 */
+h2 {
+    font-size: 1.25em;
+}
 
 #apps h1 {
 	grid-area: header;
@@ -278,7 +280,6 @@ article:before {
 
 
 .stage {
-    perspective: 1600px;
     perspective-origin: 50% 0;
     width: 22ch;
     margin-right: 1.5em;
