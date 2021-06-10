@@ -47,9 +47,14 @@ header {
     line-height: 4rem;
 }
 
-img {   
+
+
+#logo {
     position: fixed;
-    left: 20%;
+    top: 2%;
+    left: 18%;
+    height: 10%;
+    z-index: 1;
 }
 
 nav > a {
