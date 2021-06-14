@@ -1,43 +1,128 @@
 html, body {
-    background-color: black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font: 1.1em "Copperplate", fantasy;
     margin: 0;
-    padding: 0;
-}
-
-body {
-    height: 100vh;
-}
-
-nav {
     color: #fff;
-    display: flex;
-    justify-content: space-between;
-    background-color: #0d84b3;
-    padding: 2rem;
-}
-
-#navContainer {
-    word-spacing: 2vw;
-
 }
 
 a {
-    text-decoration: solid;
+    text-decoration: none;
+}
+
+/*
+Header
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: hsl(180, 87%, 15%);
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+nav {
+    display: inline-block;
+    word-spacing: 2ch;
+    font-size: 1.2em;
+}
+
+nav > a {
     color: #fff;
 }
 
-#name {
-    top: 0;
-    font-size: 20px;
+h1 {
+    font-size: 1.4em;
 }
 
-footer {
-    position: fixed;
-    display: flex;
-    background-color: rgb(23, 88, 163);
-    width: 100vw;
-    height: 2rem;
-    bottom: 0;
-    justify-content: flex-end;
+nav > a:hover {
+    color: khaki;
 }
+
+.logo {
+    vertical-align: middle;
+}
+
+.psuedonym {
+    vertical-align: middle;
+}
+
+/* 
+Main Body
+*/
+
+main {
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 86.5vh;
+    width: 100vw;
+    align-items: center;
+}
+
+
+
+main > * {
+    margin-bottom: 10%;
+    
+}
+
+main > * > * {
+    margin-left: 8ch;
+    margin-right: 8ch;
+    margin-top: 5ch;
+    margin-bottom: 5ch;
+}
+
+main > * > p, main > * > h1 {
+    margin-top: 0;
+    margin-bottom: 2ch;
+}
+
+/*
+Columns
+*/
+
+/* This selects all columns */
+
+
+.column1 {
+    flex: 1 1 20%;
+}
+
+.column2 {
+    flex: 1 1 40%;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.column3 {
+    flex: 1 1 20%;
+}
+
+/*
+Footer
+*/
+
+.footer {
+    background-color:hsl(180, 87%, 15%);
+    bottom: 0;
+    line-height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 1.5vh;
+    padding-top: 1.5vh;
+    position: relative;
+}
+
+.footer > * {
+    margin-right: 1.5vw;
+}
+
+
+
+
+
