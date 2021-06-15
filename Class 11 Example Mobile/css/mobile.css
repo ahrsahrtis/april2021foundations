@@ -1,0 +1,13 @@
+#home {
+    width: 100vw;
+}
+
+.teaser {
+    flex-direction: column;
+}
+
+
+.text {
+    text-align: center;
+    font-size: .8em;
+}
