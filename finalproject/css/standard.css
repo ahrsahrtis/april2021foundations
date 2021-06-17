@@ -58,23 +58,11 @@ main {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    height: 86.5vh;
+    height: auto;
+    margin: 0;
     width: 100vw;
     align-items: center;
-}
 
-
-
-main > * {
-    margin-bottom: 10%;
-    
-}
-
-main > * > * {
-    margin-left: 8ch;
-    margin-right: 8ch;
-    margin-top: 5ch;
-    margin-bottom: 5ch;
 }
 
 main > * > p, main > * > h1 {
@@ -84,10 +72,6 @@ main > * > p, main > * > h1 {
 
 .albumart {
     margin-left: 7vw;
-}
-
-#myphoto {
-    
 }
 
 #archive {
@@ -146,14 +130,14 @@ Footer
 
 .footer {
     background-color:hsl(180, 87%, 15%);
-    bottom: 0;
-    line-height: 4rem;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 1.5vh;
-    padding-top: 1.5vh;
-    position: relative;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .footer > * {
