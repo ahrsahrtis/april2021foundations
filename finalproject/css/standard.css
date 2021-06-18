@@ -1,12 +1,15 @@
 html, body {
-    font: 1.1em Tahoma, sans-serif;
+    font: 20px "Trebuchet MS", sans-serif;
     margin: 0;
-    color: #fff;
-    font-weight: 400;
 }
 
 a {
     text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #F2C335;
 }
 
 /*
@@ -17,9 +20,11 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    background-color: hsl(180, 87%, 15%);
-    padding-left: 2vw;
-    padding-right: 2vw;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
 }
 
 nav {
@@ -28,16 +33,13 @@ nav {
     font-size: 1.2em;
 }
 
-nav > a {
-    color: #fff;
-}
 
 .heading {
     font-size: 2em;
 }
 
 nav > a:hover {
-    color: khaki;
+    color: #BFB6AE;
 }
 
 .logo {
@@ -48,41 +50,56 @@ nav > a:hover {
     vertical-align: middle;
 }
 
+
+
 /* 
 Main Body
 */
 
 main {
-    position: relative;
-    background-color: black;
+    position: fixed;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    height: auto;
-    margin: 0;
     width: 100vw;
     align-items: center;
+    color: black;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    
 
 }
 
-main > * > p, main > * > h1 {
-    margin-top: 0;
-    margin-bottom: 2ch;
+main > * {
+    width: 50%;
+    height: 60%;
 }
 
-.albumart {
-    margin-left: 7vw;
+main > * > i {
+    margin-right: 2vw;
 }
+
+
 
 #archive {
     text-align: center;
     flex-basis: 20%;
+
+}
+
+#archive > a:hover {
+    color: #0F6DBF;
 }
 
 #post {
     flex-basis: 70%;
     
 }
+
+
+
 
 /*
 Columns
@@ -104,15 +121,9 @@ Columns
     flex: 1 1 20%;
 }
 
-#musicpage {
-    position: relative;
-    background-color: black;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    height: 86.5vh;
-    width: 100vw;
-    align-items: center;
+
+.pjblock {
+    margin-right: 2vw;
 }
 
 #pj1, #pj2 {
@@ -123,29 +134,60 @@ Columns
     border-right: none;
 }
 
+#pjnull {
+    display: none;
+}
+
 
 /*
 Footer
 */
 
 .footer {
-    background-color:hsl(180, 87%, 15%);
     display: flex;
     justify-content: flex-end;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
 }
 
 .footer > * {
     margin-right: 1.5vw;
 }
 
+header, .footer {
+    background-color: #53739B;
+}
 
+/*
+Gradient
+*/
 
+main {
+    background: linear-gradient(231deg, #f2c335, #ee9a66, #d9a679, #bfb6ae, #53739b);
+    background-size: 1000% 1000%;
 
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
 
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
 
