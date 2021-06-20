@@ -1,15 +1,35 @@
 html, body {
-    font: 20px "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
     margin: 0;
 }
 
+/*
+Links
+*/
+
 a {
     text-decoration: none;
+    color: #F2C335;
 }
 
 a:visited {
     text-decoration: none;
     color: #F2C335;
+}
+
+a:hover {
+    border-radius: 10px;
+    text-shadow: 10px 10px 20px gray;
+}
+.column3 > a {
+    display: inline-block;
+    position: relative;
+    line-height: 1.5em;
+}
+
+.column3 > a:hover {
+    text-shadow: 10px 10px 30px gray;
 }
 
 /*
@@ -34,6 +54,7 @@ nav {
 }
 
 
+
 .heading {
     font-size: 2em;
 }
@@ -44,7 +65,9 @@ nav > a:hover {
 
 .logo {
     vertical-align: middle;
+    margin-left: 1vw;
 }
+
 
 .psuedonym {
     vertical-align: middle;
@@ -98,6 +121,21 @@ main > * > i {
     
 }
 
+.column1 > p,
+.column1 > h1,
+.column2 > p,
+.column2 > h1,
+.column3 > p,
+.column3 > h1 {
+    position: relative;
+    text-align: justify;
+    width: 80%;
+    left: 5vw;
+    margin-right: 20ch;
+    line-height: 1.75em;
+}
+
+
 
 
 
@@ -114,21 +152,27 @@ Columns
 
 .column2 {
     flex: 1 1 40%;
-    border-right: 1px solid;
 }
 
 .column3 {
     flex: 1 1 20%;
 }
 
+.column1, .column2, .column3 {
+    position: relative;
+    left: -1%;
+}
+
+
 
 .pjblock {
-    margin-right: 2vw;
+    padding-right: 2vw;
 }
 
 #pj1, #pj2 {
     flex-basis: 50%;
 }
+
 
 #pj2 {
     border-right: none;
@@ -138,6 +182,24 @@ Columns
     display: none;
 }
 
+h2 {
+    position: relative;
+    left: -2%;
+}
+
+#landingpage {
+    top: 20%;
+}
+
+#landingthree {
+    top: 20%;
+    left: 5%;
+}
+
+#formprompt {
+    display: block;
+    width: 100%;
+}
 
 /*
 Footer
@@ -152,22 +214,24 @@ Footer
     width: 100%;
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
+
 
 .footer > * {
     margin-right: 1.5vw;
 }
 
-header, .footer {
-    background-color: #53739B;
-}
+
 
 /*
 Gradient
 */
 
-main {
-    background: linear-gradient(231deg, #f2c335, #ee9a66, #d9a679, #bfb6ae, #53739b);
+header, .footer {
+    background: linear-gradient(231deg, #bfb6ae, #53739b);
     background-size: 1000% 1000%;
 
     -webkit-animation: AnimationName 10s ease infinite;
@@ -190,4 +254,6 @@ main {
     50%{background-position:100% 50%}
     100%{background-position:0% 51%}
 }
+
+
 

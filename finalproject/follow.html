@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fontawesome-all.css">
     <link rel="stylesheet" href="css/standard.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    
     <title>Ahrs Ahrtis</title>
 </head>
 <body>
@@ -21,7 +25,11 @@
         <img src="assets/pseudonymlogo.png" class="psuedonym">
     </header>
     <main>
-        <span class="column3">Enter e-mail for updates</span>
+        <form id='form'>
+            <input type="text" id="email" name="email" placeholder="address@domain.com">
+        </form>
+        <br><br>
+        <p class="column3" id='formprompt'>Enter e-mail for updates</p>
     </main>
     <footer>
         <div class="footer">
