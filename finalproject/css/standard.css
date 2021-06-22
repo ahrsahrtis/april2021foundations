@@ -107,6 +107,7 @@ main > * > i {
 
 
 #archive {
+    position: relative;
     text-align: center;
     flex-basis: 20%;
 
@@ -118,7 +119,7 @@ main > * > i {
 
 #post {
     flex-basis: 70%;
-    
+    margin-left: 5vw;
 }
 
 .column1 > p,
@@ -130,14 +131,17 @@ main > * > i {
     position: relative;
     text-align: justify;
     width: 80%;
-    left: 5vw;
     margin-right: 20ch;
     line-height: 1.75em;
 }
 
+#aboutleft {
+    margin-left: 5vw;
+}
 
-
-
+.albumart {
+    margin-top: 5vh;
+}
 
 /*
 Columns
@@ -187,14 +191,14 @@ h2 {
     left: -2%;
 }
 
-#landingpage {
+/*#landingpage {
     top: 20%;
-}
+}*/
 
-#landingthree {
+/*#landingthree {
     top: 20%;
     left: 5%;
-}
+}*/
 
 #formprompt {
     display: block;
