@@ -1,0 +1,36 @@
+@media only screen and (max-width: 900px) {
+    #main {
+      background-image: url(../images/kitten-v.jpg);
+      background-size: cover;
+    }
+
+    #mainHead > * {
+        font-size: .6em;
+    }
+    
+    #subHead {
+        font-size: 1em;
+    }
+
+    #mainFooter > * {
+        font-size: 1em;
+    }
+
+    #pageTwo {
+        background-image: url(../images/kitten-flying-v.jpg);
+        background-size: cover;
+    }
+
+    .container {
+        font-size: .8em;
+        max-width: 100%;
+    }
+
+    .col2 {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+    }
+    
+}
