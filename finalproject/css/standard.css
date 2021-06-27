@@ -100,7 +100,8 @@ main > * {
     height: 60%;
 }
 
-main > * > i {
+main > * > a {
+    color: linear-gradient(231deg, #bfb6ae, #53739b);
     margin-right: 2vw;
 }
 
@@ -187,8 +188,14 @@ Columns
 }
 
 h2 {
+    color: black;
+    font-size: 2em;
     position: relative;
     left: -2%;
+    font-weight: 700;
+    transform: skew(1deg, 1deg);
+    text-shadow: 1px 1px 1px #53739b;
+    margin-top: 3em;
 }
 
 /*#landingpage {
@@ -203,6 +210,11 @@ h2 {
 #formprompt {
     display: block;
     width: 100%;
+    text-align: right;
+}
+
+#form {
+    text-align: left;
 }
 
 /*
